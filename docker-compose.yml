@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql:8
+    container_name: EmpresaPabloRM
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: Empresa
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: hola
+    ports:
+      - "3306:3306"
